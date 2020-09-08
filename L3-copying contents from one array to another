@@ -1,0 +1,16 @@
+#Intializing array
+arr1 = [10,20,30,40,50]
+#creating another array with the size of arr1
+arr2 = [None]*len(arr1)
+length = len(arr1)
+#copying all elements of first array to second
+for i in range(0,length):
+    #arr2[i] = arr1[length-i-1]
+    arr2[i] = arr1[i]
+#displaying elements of array arr1
+print("Elemts of original array: ")
+print(arr1)
+#displaying elements of array arr2
+print("Elements of new array: ")
+for i in range(0,len(arr2)):
+    print(arr2[i])
