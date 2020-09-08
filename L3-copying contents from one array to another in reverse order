@@ -1,0 +1,15 @@
+#copying elements of one array to another in reverse order
+#initaialize array
+arr1 = [100,200,300,400,500]
+#create another array arr2 with the size of arr1
+arr2 = [None]*len(arr1)
+#copying all elements of one array into another
+for i in range(0,len(arr1)):
+    arr2[i] = arr1[len(arr1)-i-1]
+#displaying elements of original array
+print("Elements of original array: ")
+print(arr1)
+#displaying elements of new array
+print("Elements of new array: ")
+for i in range(0,len(arr2)):
+    print(arr2[i])
