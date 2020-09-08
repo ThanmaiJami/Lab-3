@@ -1,0 +1,15 @@
+#deleting duplicate elements from an array
+#defining the user fiunction
+def Remove(arr):
+    final = []
+    for n in arr:
+        if n not in final:
+            final.append(n)
+    return final
+arr = [101,102,103,104,103,102,101]
+print(arr)
+newarr = Remove(arr)
+#Printing newarr in which duplicate elements are removed
+#for i in range(0,len(newarr)):
+print("The new array is: ")
+print(newarr)
